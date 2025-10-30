@@ -1,0 +1,35 @@
+# Ignore Quartus II generated files
+*_generation_script*
+*.bak
+*.cmp
+*.done
+*.eqn
+*.hex
+*.html
+*.jdi
+*.jpg
+*.mif
+*.pin
+*.pof
+*.ptf.*
+*.qar
+*.qarlog
+*.qws
+*.rpt
+*.smsg
+*.sof
+*.sopc_builder
+*.summary
+*.tcl
+*.txt
+*bak_*
+*.ppt*
+# Ignore Quartus II generated folders
+/db/
+/incremental_db/
+/simulation/
+*/simulation/
+*/timing/
+*/testbench/
+*/*_sim/
+/output_files/

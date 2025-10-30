@@ -1,0 +1,51 @@
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_TOOL_VERSION "18.0"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "font_ufm" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../font_ufm.sopcinfo"]
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name SLD_INFO "QSYS_NAME font_ufm HAS_SOPCINFO 1 GENERATION_ID 1758459213"
+set_global_assignment -library "font_ufm" -name MISC_FILE [file join $::quartus(qip_path) "../font_ufm.cmp"]
+set_global_assignment -library "font_ufm" -name SLD_FILE [file join $::quartus(qip_path) "font_ufm.debuginfo"]
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_TARGETED_DEVICE_FAMILY "MAX II"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_GENERATED_DEVICE_FAMILY "{MAX II}"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "font_ufm" -name MISC_FILE [file join $::quartus(qip_path) "../../font_ufm.qsys"]
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_NAME "Zm9udF91Zm0="
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_DISPLAY_NAME "Zm9udF91Zm0="
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc1ODQ1OTIxMw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::TUFYIElJ::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::RVBNMTI3MFQxNDRDNQ==::QXV0byBERVZJQ0U="
+set_global_assignment -entity "font_ufm" -library "font_ufm" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::NQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_NAME "Zm9udF91Zm1fdWZtX3BhcmFsbGVsXzA="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_DISPLAY_NAME "VXNlciBGbGFzaCBNZW1vcnkgZm9yIFBhcmFsbGVsIEludGVyZmFjZSBQcm90b2NvbCBJbnRlbCBGUEdBIElQ"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_VERSION "MTguMA=="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_DESCRIPTION "VGhlIEFsdGVyYSBVc2VyIEZsYXNoIE1lbW9yeSBmb3IgUGFyYWxsZWwgSW50ZXJmYWNlIFByb3RvY29sIG1lZ2FmdW5jdGlvbiBpbXBsZW1lbnRzIHVzZXIgIG5vbi12b2xhdGlsZSBtZW1vcnkgZm9yIE1BWCBJSS9NYXggViBkZXZpY2VzIHVzaW5nIHRoZSBwYXJhbGxlbCBpbnRlcmZhY2UgcHJvdG9jb2wu"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "REVWSUNFX0ZBTUlMWQ==::TUFYIElJ::RGV2aWNlIGZhbWlseQ=="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "Q0JYX0FVVE9fQkxBQ0tCT1g=::QUxM::Q0JYX0FVVE9fQkxBQ0tCT1g="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "QUNDRVNTX01PREU=::UkVBRF9PTkxZ::QWNjZXNzIG1vZGU="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "V0lEVEhfQUREUkVTUw==::OQ==::J2FkZHInIHdpZHRo"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "V0lEVEhfREFUQQ==::MTY=::J2RhdGFpbicgd2lkdGg="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "T1NDX0NIRUNL::ZmFsc2U=::VXNlICdvc2MnIG91dHB1dCBwb3J0"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "T1NDRU5BX0NIRUNL::ZmFsc2U=::VXNlICdvc2NlbmEnIGlucHV0IHBvcnQ="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "R1VJX01FTV9JTklU::SW5pdGlhbGl6ZSBmcm9tIGhleCBvciBtaWYgZmlsZQ==::TWVtb3J5IGNvbnRlbnQgaW5pdGlhbGl6YXRpb24="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "TFBNX0ZJTEU=::RTovaW50ZWxGUEdBL1Byb2plY3RzL0h5ZHJvR3VhcmQvZnVzaW9uLXBpeGVsLThweC1tb25vc3BhY2VkLWxhdGluLm1pZg==::RmlsZSBuYW1l"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "R1VJX09TQ19GUkVRVUVOQ1k=::NS41Ng==::T3NjaWxsYXRvciBmcmVxdWVuY3k="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "T1NDX0ZSRVFVRU5DWQ==::MTgwMDAw::T1NDX0ZSRVFVRU5DWQ=="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "R1VJX0VSQVNFX1RJTUU=::NTAwMDAw::RXJhc2UgdGltZQ=="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "RVJBU0VfVElNRQ==::NTAwMDAwMDAw::RVJBU0VfVElNRQ=="
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "R1VJX1BST0dSQU1fVElNRQ==::MTYwMA==::UHJvZ3JhbSB0aW1l"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "UFJPR1JBTV9USU1F::MTYwMDAwMA==::UFJPR1JBTV9USU1F"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_COMPONENT_PARAMETER "V0lEVEhfVUZNX0FERFJFU1M=::OQ==::V0lEVEhfVUZNX0FERFJFU1M="
+
+set_global_assignment -library "font_ufm" -name VHDL_FILE [file join $::quartus(qip_path) "font_ufm.vhd"]
+set_global_assignment -library "font_ufm" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/font_ufm_ufm_parallel_0.v"]
+
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_TOOL_NAME "altera_ufm_parallel"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_TOOL_VERSION "18.0"
+set_global_assignment -entity "font_ufm_ufm_parallel_0" -library "font_ufm" -name IP_TOOL_ENV "Qsys"

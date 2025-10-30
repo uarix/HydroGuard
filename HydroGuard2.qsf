@@ -1,0 +1,129 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Intel Program License
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+# Date created = 15:44:59  September 18, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		HydroGuard2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM1270T144C5
+set_global_assignment -name TOP_LEVEL_ENTITY HydroGuard
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:23:37  SEPTEMBER 18, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_location_assignment PIN_32 -to rd_n_o
+set_location_assignment PIN_37 -to wr_n_o
+set_location_assignment PIN_48 -to a0_o
+set_location_assignment PIN_18 -to clk_i
+set_location_assignment PIN_108 -to cs_n_o
+set_location_assignment PIN_107 -to data_o[7]
+set_location_assignment PIN_106 -to data_o[6]
+set_location_assignment PIN_105 -to data_o[5]
+set_location_assignment PIN_104 -to data_o[4]
+set_location_assignment PIN_103 -to data_o[3]
+set_location_assignment PIN_102 -to data_o[2]
+set_location_assignment PIN_110 -to data_o[1]
+set_location_assignment PIN_101 -to data_o[0]
+set_location_assignment PIN_95 -to echo_i
+set_location_assignment PIN_133 -to reset_i
+set_location_assignment PIN_109 -to reset_n_o
+set_location_assignment PIN_94 -to trig_o
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS OFF
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_location_assignment PIN_31 -to cat_out_o[7]
+set_location_assignment PIN_30 -to cat_out_o[6]
+set_location_assignment PIN_70 -to cat_out_o[5]
+set_location_assignment PIN_69 -to cat_out_o[4]
+set_location_assignment PIN_68 -to cat_out_o[3]
+set_location_assignment PIN_67 -to cat_out_o[2]
+set_location_assignment PIN_66 -to cat_out_o[1]
+set_location_assignment PIN_63 -to cat_out_o[0]
+set_location_assignment PIN_52 -to segment_out_o[6]
+set_location_assignment PIN_53 -to segment_out_o[5]
+set_location_assignment PIN_55 -to segment_out_o[4]
+set_location_assignment PIN_57 -to segment_out_o[3]
+set_location_assignment PIN_58 -to segment_out_o[2]
+set_location_assignment PIN_59 -to segment_out_o[1]
+set_location_assignment PIN_62 -to segment_out_o[0]
+set_location_assignment PIN_38 -to col_g_out_o[7]
+set_location_assignment PIN_39 -to col_g_out_o[6]
+set_location_assignment PIN_40 -to col_g_out_o[5]
+set_location_assignment PIN_41 -to col_g_out_o[4]
+set_location_assignment PIN_42 -to col_g_out_o[3]
+set_location_assignment PIN_43 -to col_g_out_o[2]
+set_location_assignment PIN_44 -to col_g_out_o[1]
+set_location_assignment PIN_45 -to col_g_out_o[0]
+set_location_assignment PIN_11 -to col_r_out_o[7]
+set_location_assignment PIN_12 -to col_r_out_o[6]
+set_location_assignment PIN_13 -to col_r_out_o[5]
+set_location_assignment PIN_14 -to col_r_out_o[4]
+set_location_assignment PIN_15 -to col_r_out_o[3]
+set_location_assignment PIN_16 -to col_r_out_o[2]
+set_location_assignment PIN_21 -to col_r_out_o[1]
+set_location_assignment PIN_22 -to col_r_out_o[0]
+set_location_assignment PIN_1 -to row_out_o[7]
+set_location_assignment PIN_2 -to row_out_o[6]
+set_location_assignment PIN_3 -to row_out_o[5]
+set_location_assignment PIN_4 -to row_out_o[4]
+set_location_assignment PIN_5 -to row_out_o[3]
+set_location_assignment PIN_6 -to row_out_o[2]
+set_location_assignment PIN_7 -to row_out_o[1]
+set_location_assignment PIN_8 -to row_out_o[0]
+set_location_assignment PIN_60 -to buzzer_out_o
+set_global_assignment -name VHDL_FILE driver_modules/debounce.vhd
+set_global_assignment -name VHDL_FILE driver_modules/buzzer.vhd
+set_global_assignment -name VHDL_FILE driver_modules/seven_segment.vhd
+set_global_assignment -name VHDL_FILE driver_modules/led_matrix.vhd
+set_global_assignment -name VHDL_FILE driver_modules/lcd_12864.vhd
+set_global_assignment -name VHDL_FILE driver_modules/hr_sr04.vhd
+set_global_assignment -name VHDL_FILE HydroGuard.vhd
+set_global_assignment -name QIP_FILE font_ufm/synthesis/font_ufm.qip
+set_global_assignment -name QSYS_FILE font_ufm.qsys
+set_global_assignment -name SOURCE_FILE db/HydroGuard2.cmp.rdb
+set_location_assignment PIN_80 -to floodgate_open_o
+set_location_assignment PIN_134 -to sw0_i
+set_location_assignment PIN_89 -to btn2_i
+set_location_assignment PIN_124 -to btn7_i

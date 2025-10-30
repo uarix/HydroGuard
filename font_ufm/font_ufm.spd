@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/font_ufm_ufm_parallel_0.v"
+   type="VERILOG"
+   library="ufm_parallel_0" />
+ <file path="simulation/font_ufm.vhd" type="VHDL" />
+ <topLevel name="font_ufm" />
+ <deviceFamily name="maxii" />
+</simPackage>

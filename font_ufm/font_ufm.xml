@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2025.09.21.20:53:35"
+ outputDirectory="E:/intelFPGA/Projects/HydroGuard/font_ufm/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="MAX II"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EPM1270T144C5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="addr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="addr" direction="input" role="addr" width="9" />
+  </interface>
+  <interface name="data_valid" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="data_valid" direction="output" role="data_valid" width="1" />
+  </interface>
+  <interface name="dataout" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="dataout" direction="output" role="dataout" width="16" />
+  </interface>
+  <interface name="nbusy" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="nbusy" direction="output" role="nbusy" width="1" />
+  </interface>
+  <interface name="nread" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="nread" direction="input" role="nread" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="font_ufm:1.0:AUTO_DEVICE=EPM1270T144C5,AUTO_DEVICE_FAMILY=MAX II,AUTO_DEVICE_SPEEDGRADE=5,AUTO_GENERATION_ID=1758459213,AUTO_UNIQUE_ID=(altera_ufm_parallel:18.0:ACCESS_MODE=READ_ONLY,CBX_AUTO_BLACKBOX=ALL,DEVICE_FAMILY=MAX II,ERASE_TIME=500000000,GUI_ERASE_TIME=500000,GUI_MEM_INIT=Initialize from hex or mif file,GUI_OSC_FREQUENCY=5.56,GUI_PROGRAM_TIME=1600,LPM_FILE=E:/intelFPGA/Projects/HydroGuard/fusion-pixel-8px-monospaced-latin.mif,OSCENA_CHECK=false,OSC_CHECK=false,OSC_FREQUENCY=180000,PROGRAM_TIME=1600000,WIDTH_ADDRESS=9,WIDTH_DATA=16,WIDTH_UFM_ADDRESS=9)"
+   instancePathKey="font_ufm"
+   kind="font_ufm"
+   version="1.0"
+   name="font_ufm">
+  <parameter name="AUTO_GENERATION_ID" value="1758459213" />
+  <parameter name="AUTO_DEVICE" value="EPM1270T144C5" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX II" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
+  <generatedFiles>
+   <file
+       path="E:/intelFPGA/Projects/HydroGuard/font_ufm/synthesis/font_ufm.vhd"
+       type="VHDL" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="E:/intelFPGA/Projects/HydroGuard/font_ufm/synthesis/submodules/font_ufm_ufm_parallel_0.v"
+       type="VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="E:/intelFPGA/Projects/HydroGuard/font_ufm.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="E:/intelfpga/18.0/ip/altera/altera_ufm/altera_ufm_parallel/altera_ufm_parallel_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="font_ufm">queue size: 0 starting:font_ufm "font_ufm"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="font_ufm"><![CDATA["<b>font_ufm</b>" reuses <b>altera_ufm_parallel</b> "<b>submodules/font_ufm_ufm_parallel_0</b>"]]></message>
+   <message level="Debug" culprit="font_ufm">queue size: 0 starting:altera_ufm_parallel "submodules/font_ufm_ufm_parallel_0"</message>
+   <message level="Info" culprit="ufm_parallel_0">Generating top-level entity font_ufm_ufm_parallel_0.</message>
+   <message level="Info" culprit="ufm_parallel_0"><![CDATA["<b>font_ufm</b>" instantiated <b>altera_ufm_parallel</b> "<b>ufm_parallel_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_ufm_parallel:18.0:ACCESS_MODE=READ_ONLY,CBX_AUTO_BLACKBOX=ALL,DEVICE_FAMILY=MAX II,ERASE_TIME=500000000,GUI_ERASE_TIME=500000,GUI_MEM_INIT=Initialize from hex or mif file,GUI_OSC_FREQUENCY=5.56,GUI_PROGRAM_TIME=1600,LPM_FILE=E:/intelFPGA/Projects/HydroGuard/fusion-pixel-8px-monospaced-latin.mif,OSCENA_CHECK=false,OSC_CHECK=false,OSC_FREQUENCY=180000,PROGRAM_TIME=1600000,WIDTH_ADDRESS=9,WIDTH_DATA=16,WIDTH_UFM_ADDRESS=9"
+   instancePathKey="font_ufm:.:ufm_parallel_0"
+   kind="altera_ufm_parallel"
+   version="18.0"
+   name="font_ufm_ufm_parallel_0">
+  <parameter name="GUI_OSC_FREQUENCY" value="5.56" />
+  <parameter name="WIDTH_ADDRESS" value="9" />
+  <parameter name="OSCENA_CHECK" value="false" />
+  <parameter name="DEVICE_FAMILY" value="MAX II" />
+  <parameter name="OSC_CHECK" value="false" />
+  <parameter name="GUI_MEM_INIT" value="Initialize from hex or mif file" />
+  <parameter name="WIDTH_UFM_ADDRESS" value="9" />
+  <parameter name="PROGRAM_TIME" value="1600000" />
+  <parameter name="WIDTH_DATA" value="16" />
+  <parameter name="ERASE_TIME" value="500000000" />
+  <parameter name="OSC_FREQUENCY" value="180000" />
+  <parameter name="ACCESS_MODE" value="READ_ONLY" />
+  <parameter name="GUI_ERASE_TIME" value="500000" />
+  <parameter name="CBX_AUTO_BLACKBOX" value="ALL" />
+  <parameter
+     name="LPM_FILE"
+     value="E:/intelFPGA/Projects/HydroGuard/fusion-pixel-8px-monospaced-latin.mif" />
+  <parameter name="GUI_PROGRAM_TIME" value="1600" />
+  <generatedFiles>
+   <file
+       path="E:/intelFPGA/Projects/HydroGuard/font_ufm/synthesis/submodules/font_ufm_ufm_parallel_0.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="E:/intelfpga/18.0/ip/altera/altera_ufm/altera_ufm_parallel/altera_ufm_parallel_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="font_ufm" as="ufm_parallel_0" />
+  <messages>
+   <message level="Debug" culprit="font_ufm">queue size: 0 starting:altera_ufm_parallel "submodules/font_ufm_ufm_parallel_0"</message>
+   <message level="Info" culprit="ufm_parallel_0">Generating top-level entity font_ufm_ufm_parallel_0.</message>
+   <message level="Info" culprit="ufm_parallel_0"><![CDATA["<b>font_ufm</b>" instantiated <b>altera_ufm_parallel</b> "<b>ufm_parallel_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

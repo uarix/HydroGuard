@@ -1,0 +1,11 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst font_ufm -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst font_ufm.ufm_parallel_0 -pg 1 -lvl 1 -y 30
+preplace netloc EXPORT<net_container>font_ufm</net_container>(SLAVE)font_ufm.dataout,(SLAVE)ufm_parallel_0.dataout) 1 0 1 NJ
+preplace netloc EXPORT<net_container>font_ufm</net_container>(SLAVE)font_ufm.nread,(SLAVE)ufm_parallel_0.nread) 1 0 1 NJ
+preplace netloc EXPORT<net_container>font_ufm</net_container>(SLAVE)ufm_parallel_0.data_valid,(SLAVE)font_ufm.data_valid) 1 0 1 NJ
+preplace netloc EXPORT<net_container>font_ufm</net_container>(SLAVE)font_ufm.addr,(SLAVE)ufm_parallel_0.addr) 1 0 1 NJ
+preplace netloc EXPORT<net_container>font_ufm</net_container>(SLAVE)ufm_parallel_0.nbusy,(SLAVE)font_ufm.nbusy) 1 0 1 NJ
+levelinfo -pg 1 0 80 240
+levelinfo -hier font_ufm 90 120 230

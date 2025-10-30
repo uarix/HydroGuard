@@ -1,0 +1,18 @@
+# system info font_ufm on 2025.09.21.20:53:28
+system_info:
+name,value
+DEVICE,EPM1270T144C5
+DEVICE_FAMILY,MAX II
+GENERATION_ID,1758459206
+#
+#
+# Files generated for font_ufm on 2025.09.21.20:53:28
+files:
+filepath,kind,attributes,module,is_top
+simulation/font_ufm.vhd,VHDL,,font_ufm,true
+simulation/submodules/font_ufm_ufm_parallel_0.v,VERILOG,,font_ufm_ufm_parallel_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+font_ufm.ufm_parallel_0,font_ufm_ufm_parallel_0

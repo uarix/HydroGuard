@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=true"
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element ufm_parallel_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="EPM1270T144C5" />
+ <parameter name="deviceFamily" value="MAX II" />
+ <parameter name="deviceSpeedGrade" value="5" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="HydroGuard.qpf" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="addr" internal="ufm_parallel_0.addr" type="conduit" dir="end">
+  <port name="addr" internal="addr" />
+ </interface>
+ <interface
+   name="data_valid"
+   internal="ufm_parallel_0.data_valid"
+   type="conduit"
+   dir="end">
+  <port name="data_valid" internal="data_valid" />
+ </interface>
+ <interface name="datain" internal="ufm_parallel_0.datain" />
+ <interface
+   name="dataout"
+   internal="ufm_parallel_0.dataout"
+   type="conduit"
+   dir="end">
+  <port name="dataout" internal="dataout" />
+ </interface>
+ <interface name="nbusy" internal="ufm_parallel_0.nbusy" type="conduit" dir="end">
+  <port name="nbusy" internal="nbusy" />
+ </interface>
+ <interface name="nerase" internal="ufm_parallel_0.nerase" />
+ <interface name="nread" internal="ufm_parallel_0.nread" type="conduit" dir="end">
+  <port name="nread" internal="nread" />
+ </interface>
+ <interface name="nwrite" internal="ufm_parallel_0.nwrite" />
+ <interface name="osc" internal="ufm_parallel_0.osc" />
+ <module
+   name="ufm_parallel_0"
+   kind="altera_ufm_parallel"
+   version="18.0"
+   enabled="1"
+   autoexport="1">
+  <parameter name="ACCESS_MODE" value="READ_ONLY" />
+  <parameter name="CBX_AUTO_BLACKBOX" value="ALL" />
+  <parameter name="DEVICE_FAMILY" value="MAX II" />
+  <parameter name="GUI_ERASE_TIME" value="500000" />
+  <parameter name="GUI_MEM_INIT">Initialize from hex or mif file</parameter>
+  <parameter name="GUI_OSC_FREQUENCY" value="5.56" />
+  <parameter name="GUI_PROGRAM_TIME" value="1600" />
+  <parameter name="LPM_FILE">E:/intelFPGA/Projects/HydroGuard/fusion-pixel-8px-monospaced-latin.mif</parameter>
+  <parameter name="OSCENA_CHECK" value="false" />
+  <parameter name="OSC_CHECK" value="false" />
+  <parameter name="WIDTH_ADDRESS" value="9" />
+  <parameter name="WIDTH_DATA" value="16" />
+  <parameter name="WIDTH_UFM_ADDRESS" value="9" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>
